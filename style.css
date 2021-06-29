@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200&family=Glegoo:wght@700&family=Inter:wght@600&family=Oxygen:wght@300&family=Zilla+Slab:ital,wght@1,300;1,400&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f0ece2;
+  padding: 0;
+  margin: 0;
+}
+
+body .welcome {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: calc(100vw-1);
+  background-color: #313131;
+}
+
+body .welcome header {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .welcome header a {
+  margin-left: 3em;
+  color: #f0ece2;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+body .welcome header .burger {
+  margin-right: 4em;
+  cursor: pointer;
+}
+
+body .welcome header .burger div {
+  width: 30px;
+  height: 3px;
+  background-color: #f0ece2;
+  margin: 5px 0;
+  -webkit-transition: 0.5s -webkit-transform;
+  transition: 0.5s -webkit-transform;
+  transition: 0.5s transform;
+  transition: 0.5s transform, 0.5s -webkit-transform;
+}
+
+body .welcome .active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .welcome .social-links {
+  margin: 2.5em 0;
+}
+
+body .welcome .social-links .fa {
+  padding: 8px;
+  font-size: 25px;
+  color: #f0ece2;
+  text-align: center;
+  border-radius: 5%;
+  text-decoration: none;
+  font-family: FontAwesome;
+}
+
+body .welcome .social-links .fa:hover {
+  opacity: 0.5;
+}
+
+body .welcome .nav-links {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .welcome .nav-links a {
+  font-family: 'Glegoo', serif;
+  text-decoration: none;
+  font-size: 2em;
+  color: #b1b0b0;
+}
+
+body .welcome .nav-links a:hover {
+  background-color: #313131;
+  border-radius: 5px;
+}
+
+body .welcome .credits {
+  background-color: #222222;
+  width: calc(100vw-1);
+}
+
+body .welcome .credits p {
+  padding: 1em;
+  color: #b1b0b0;
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+}
+
+body .welcome .credits .flex-foot {
+  width: calc(100vw-1);
+  padding-bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .welcome .credits .flex-foot .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .welcome .credits .flex-foot .more h3 {
+  color: #b1b0b0;
+  font-family: 'Zilla Slab', serif;
+}
+
+body .welcome .credits .flex-foot .more a {
+  color: #b1b0b0;
+  text-decoration: none;
+  font-family: 'Zilla Slab', serif;
+}
+
+body .welcome .credits .flex-foot .resources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .welcome .credits .flex-foot .resources h3 {
+  color: #b1b0b0;
+  font-family: 'Zilla Slab', serif;
+}
+
+body .welcome .credits .flex-foot .resources a {
+  color: #b1b0b0;
+  text-decoration: none;
+  font-family: 'Zilla Slab', serif;
+}
+
+.nav-bar {
+  height: 85vh;
+  width: 100%;
+  position: absolute;
+  float: left;
+  background-color: rgba(88, 88, 88, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background: #414141;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7a7a7a;
+  border-radius: 10px;
+  height: 1em;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #b1b0b0;
+}
+
+@media only screen and (max-width: 719px) {
+  body .welcome {
+    height: 100vh;
+  }
+  body .welcome header a {
+    margin-left: 1em;
+  }
+  body .welcome header .burger {
+    margin-right: 2em;
+  }
+  body .grid-wrapper img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body .no-mobile {
+    display: none;
+  }
+  body .for-fhd {
+    display: none;
+  }
+  body .learning .s-icons {
+    margin-left: 1em;
+  }
+}
+
+.toggle .lin1 {
+  -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
+          transform: translate3d(0, 8px, 0) rotate(45deg);
+}
+
+.toggle .lin2 {
+  opacity: 0;
+}
+
+.toggle .lin3 {
+  -webkit-transform: translate3d(0, -8px, 0) rotate(-45deg);
+          transform: translate3d(0, -8px, 0) rotate(-45deg);
+}
+/*# sourceMappingURL=style.css.map */
